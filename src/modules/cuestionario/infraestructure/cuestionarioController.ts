@@ -83,4 +83,31 @@ export class CuestionarioController implements interfaces.Controller {
             }    
         }
     }
+
+    @httpGet('/getAll')
+    public async getAll(
+        @request() req: express.Request,
+        @response() res: express.Response
+    ): Promise<IHttpResponse> {
+        this.body = req.body        
+        const validatorSchema = CuestionarioSchemaRequest.CuestionarioGetAllSchemaRequest.validate(this.body)
+        if (validatorSchema.error) {
+            return {
+                status: 422,
+                errors: ['Invalid structure']
+            }
+        }
+        
+        try {
+            return {
+                status: 200,
+                data:  await this.cuestionarioService.getAll()
+            }    
+        } catch (err) {
+            return {
+                status: 500,
+                errors: [ err ]
+            }    
+        }
+    }
 }

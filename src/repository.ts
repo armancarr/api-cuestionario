@@ -21,9 +21,9 @@ export class Repository {
 
     // @description obtain all register
     // TODO: agregar la opción de limitar la cantidad de registros a retornar
-    public index = async (): Promise<Entity[]> => {
+    public index = async (): Promise<Entity[]|Object[]> => {
         try {
-            const arr: Entity[] = await Repository.db.getAll(this.table)
+            const arr: Entity[]|Object[] = await Repository.db.getAll(this.table)
             return arr
         } catch (err) {
             throw new Error(JSON.stringify(err))

@@ -78,6 +78,7 @@ export class MongoDB implements IDataBase {
                 if (error) {
                     return reject(error)
                 }
+                console.debug("data devuelta de BD",data)
                 return resolve(data)
             })
         })
@@ -104,8 +105,6 @@ export class MongoDB implements IDataBase {
                     return reject(error)
                 }
                 console.debug("data devuelta de BD",data)
-                
-                console.debug("collection BD",collection)
                 return resolve(data)
             })
         })

@@ -3,4 +3,5 @@ import { ICuestionarioGetRequest,  ICuestionarioGetResponse, ICuestionarioSaveRe
 export interface ICuestionarioService {
     save(payload: ICuestionarioSaveRequest): Promise<ICuestionarioSaveResponse>
     get(payload: ICuestionarioGetRequest): Promise<ICuestionarioGetResponse>
+    getAll():Promise<ICuestionarioGetResponse>
 }

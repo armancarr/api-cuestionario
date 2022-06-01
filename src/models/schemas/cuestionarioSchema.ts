@@ -22,7 +22,13 @@ const CuestionarioSaveSchemaRequest = joi.object().keys({
         }).required(),
     }).required()
 }).required()
+
+const CuestionarioGetAllSchemaRequest = joi.object().keys({
+}).required()
+
 export const CuestionarioSchemaRequest = {
     CuestionarioGetSchemaRequest,
-    CuestionarioSaveSchemaRequest
+    CuestionarioSaveSchemaRequest,
+    CuestionarioGetAllSchemaRequest
 }
+

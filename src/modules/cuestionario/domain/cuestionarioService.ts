@@ -94,4 +94,28 @@ export class CuestionarioService implements ICuestionarioService {
             throw new Error('internal_server_error')
         }
     }
+
+    public getAll= async () => {
+        let respuesta:ICuestionarioGetResponse = {
+            status:'SUCCESS'
+        }
+        try {
+            const queryResult:any = await this.repo.index()
+            console.log('queryResult::::: CuestionarioService getAll',queryResult)
+            if(queryResult){
+                respuesta.data= queryResult
+                this.logger.debug(`CuestionarioService->GetAll: ${JSON.stringify(respuesta.data)}`)
+                return respuesta
+            }
+            await this.logger.error(`CuestionarioService->GetAll: No Existen cuestionarios`,TYPES_ERRORS.internal_server_error)
+            return respuesta = {
+                status: 'Structure error',
+                data: ['No existe cuestionario']
+            }
+            
+        } catch (error) {
+            await this.logger.error(`CuestionarioService->GetAll: Error en consulta ${JSON.stringify(error)}`,TYPES_ERRORS.internal_server_error)
+            throw new Error('internal_server_error')
+        }
+    }
 }

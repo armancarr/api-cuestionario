@@ -14,7 +14,7 @@ export class BaseService {
         this.body = {}
     }
 
-    public index = async (): Promise<Entity[]> => {
+    public index = async (): Promise<Entity[]|Object[]> => {
         try {
             return await this.repository.index()
         } catch(err) {
