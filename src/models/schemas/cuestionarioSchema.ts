@@ -19,8 +19,8 @@ const CuestionarioSaveSchemaRequest = joi.object().keys({
             respuesta: joi.any().required(),
             state: joi.boolean().required(),
             esCorrecta: joi.boolean().required(),
-        }).required(),
-    }).required()
+        }).optional().min(0),
+    }).optional().min(0),
 }).required()
 
 const CuestionarioGetAllSchemaRequest = joi.object().keys({

@@ -103,7 +103,8 @@ export class CuestionarioService implements ICuestionarioService {
             const queryResult:any = await this.repo.index()
             console.log('queryResult::::: CuestionarioService getAll',queryResult)
             if(queryResult){
-                respuesta.data= queryResult
+                let response = queryResult.filter((cuestionario:any)=> cuestionario.state!== false)
+                respuesta.data= response
                 this.logger.debug(`CuestionarioService->GetAll: ${JSON.stringify(respuesta.data)}`)
                 return respuesta
             }
