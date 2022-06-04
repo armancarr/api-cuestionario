@@ -1,0 +1,44 @@
+{ 
+    "_id" : ObjectId("629af2a8932cb9d634ca8dbd"), 
+    "idUsuario" : "1", 
+    "idCuestionario" : "1", 
+    "respCuestionario" : [
+        {
+            "pregunta" : "¿Cual es el pais mas ganador de la historia de la Copa del mundo?", 
+            "respuestaUser" : "Brasil", 
+            "esCorrecta" : true
+        }, 
+        {
+            "pregunta" : "¿Quien gano la copa del mundo de Mexico 1986?", 
+            "respuestaUser" : "Argentina", 
+            "esCorrecta" : true
+        }, 
+        {
+            "pregunta" : "¿Quien es el máximo goleador de la historia de Copa del Mundo?", 
+            "respuestaUser" : "Klose", 
+            "esCorrecta" : true
+        }
+    ]
+}
+{ 
+    "_id" : ObjectId("629af942932cb9d634ca8dbe"), 
+    "idUsuario" : "1", 
+    "idCuestionario" : "2", 
+    "respCuestionario" : [
+        {
+            "pregunta" : "Capital de Colombia?", 
+            "respuestaUser" : "Bogota", 
+            "esCorrecta" : "false"
+        }, 
+        {
+            "pregunta" : "Capital de Venezuela?", 
+            "respuestaUser" : "Caracas", 
+            "esCorrecta" : "false"
+        }, 
+        {
+            "pregunta" : "Capital de Brasil", 
+            "respuestaUser" : "Brasilia", 
+            "esCorrecta" : "false"
+        }
+    ]
+}

@@ -1,3 +1,235 @@
-{ "_id" : { "$oid" : "6294eb6b6feea16e30aa6f44" }, "nombre" : "Copas del mundo de la FIFA", "state" : true, "preguntas" : [ { "id" : "1", "pregunta" : "¿Cual es el pais mas ganador de la historia de la Copa del mundo?", "state" : true, "respuestas" : [ { "id" : "1", "respuesta" : "Brasil", "esCorrecta" : true, "state" : true }, { "id" : "2", "respuesta" : "Italia", "esCorrecta" : false, "state" : true }, { "id" : "5", "respuesta" : "Alemania", "esCorrecta" : false, "state" : true } ] }, { "id" : "2", "pregunta" : "¿Quien gano la copa del mundo de Mexico 1986?", "state" : true, "respuestas" : [ { "id" : "1", "respuesta" : "Brasil", "esCorrecta" : false, "state" : true }, { "id" : "2", "respuesta" : "Italia", "esCorrecta" : false, "state" : true }, { "id" : "3", "respuesta" : "Argentina", "esCorrecta" : true, "state" : true }, { "id" : "3", "respuesta" : "Francia", "esCorrecta" : false, "state" : true }, { "id" : "5", "respuesta" : "Alemania", "esCorrecta" : false, "state" : true } ] }, { "id" : "3", "pregunta" : "¿Quien es el máximo goleador de la historia de Copa del Mundo?", "state" : true, "respuestas" : [ { "id" : "1", "respuesta" : "Ronaldo", "esCorrecta" : false, "state" : true }, { "id" : "2", "respuesta" : "Klose", "esCorrecta" : "false", "state" : true } ] } ], "idCuestionario" : "1" }
-{ "_id" : { "$oid" : "629818a77fc913dd505ba206" }, "idCuestionario" : "2", "nombre" : "Capitales del Mundo", "state" : true, "preguntas" : [  ] }
-{ "_id" : { "$oid" : "6298285e7fc913dd505ba207" }, "idCuestionario" : "3", "nombre" : "Animales de la selva", "state" : false, "preguntas" : [  ] }
+{ 
+    "_id" : ObjectId("6294eb6b6feea16e30aa6f44"), 
+    "nombre" : "Copas del mundo de la FIFA", 
+    "state" : true, 
+    "preguntas" : [
+        {
+            "id" : "1", 
+            "pregunta" : "¿Cual es el pais mas ganador de la historia de la Copa del mundo?", 
+            "state" : true, 
+            "respuestas" : [
+                {
+                    "id" : "1", 
+                    "respuesta" : "Brasil", 
+                    "esCorrecta" : true, 
+                    "state" : true
+                }, 
+                {
+                    "id" : "2", 
+                    "respuesta" : "Italia", 
+                    "esCorrecta" : false, 
+                    "state" : true
+                }, 
+                {
+                    "id" : "5", 
+                    "respuesta" : "Alemania", 
+                    "esCorrecta" : false, 
+                    "state" : true
+                }
+            ]
+        }, 
+        {
+            "id" : "2", 
+            "pregunta" : "¿Quien gano la copa del mundo de Mexico 1986?", 
+            "state" : true, 
+            "respuestas" : [
+                {
+                    "id" : "1", 
+                    "respuesta" : "Brasil", 
+                    "esCorrecta" : false, 
+                    "state" : true
+                }, 
+                {
+                    "id" : "2", 
+                    "respuesta" : "Italia", 
+                    "esCorrecta" : false, 
+                    "state" : true
+                }, 
+                {
+                    "id" : "3", 
+                    "respuesta" : "Argentina", 
+                    "esCorrecta" : true, 
+                    "state" : true
+                }, 
+                {
+                    "id" : "4", 
+                    "respuesta" : "Francia", 
+                    "esCorrecta" : false, 
+                    "state" : true
+                }, 
+                {
+                    "id" : "5", 
+                    "respuesta" : "Alemania", 
+                    "esCorrecta" : false, 
+                    "state" : true
+                }
+            ]
+        }, 
+        {
+            "id" : "3", 
+            "pregunta" : "¿Quien es el máximo goleador de la historia de Copa del Mundo?", 
+            "state" : true, 
+            "respuestas" : [
+                {
+                    "id" : "1", 
+                    "respuesta" : "Ronaldo", 
+                    "esCorrecta" : false, 
+                    "state" : true
+                }, 
+                {
+                    "id" : "2", 
+                    "respuesta" : "Klose", 
+                    "esCorrecta" : true, 
+                    "state" : true
+                }, 
+                {
+                    "id" : "3", 
+                    "respuesta" : "Messi", 
+                    "esCorrecta" : false, 
+                    "state" : true
+                }, 
+                {
+                    "id" : "4", 
+                    "respuesta" : "Cristiano Ronaldo", 
+                    "esCorrecta" : false, 
+                    "state" : true
+                }, 
+                {
+                    "id" : "5", 
+                    "respuesta" : "Pele", 
+                    "esCorrecta" : false, 
+                    "state" : true
+                }, 
+                {
+                    "id" : "6", 
+                    "respuesta" : "Maradona", 
+                    "esCorrecta" : false, 
+                    "state" : true
+                }, 
+                {
+                    "id" : "7", 
+                    "respuesta" : "Cruyff", 
+                    "esCorrecta" : false, 
+                    "state" : true
+                }, 
+                {
+                    "id" : "8", 
+                    "respuesta" : "Totti", 
+                    "esCorrecta" : false, 
+                    "state" : true
+                }, 
+                {
+                    "id" : "9", 
+                    "respuesta" : "Forlan", 
+                    "esCorrecta" : false, 
+                    "state" : true
+                }, 
+                {
+                    "id" : "10", 
+                    "respuesta" : "Asprilla", 
+                    "esCorrecta" : false, 
+                    "state" : true
+                }
+            ]
+        }
+    ], 
+    "idCuestionario" : "1"
+}
+{ 
+    "_id" : ObjectId("629818a77fc913dd505ba206"), 
+    "idCuestionario" : "2", 
+    "nombre" : "Capitales del Mundo", 
+    "state" : true, 
+    "preguntas" : [
+        {
+            "id" : "1", 
+            "pregunta" : "Capital de Colombia?", 
+            "state" : true, 
+            "respuestas" : [
+                {
+                    "id" : "1", 
+                    "respuesta" : "Bogota", 
+                    "esCorrecta" : "false", 
+                    "state" : true
+                }, 
+                {
+                    "id" : "2", 
+                    "respuesta" : "Medellin", 
+                    "esCorrecta" : false, 
+                    "state" : true
+                }, 
+                {
+                    "id" : "3", 
+                    "respuesta" : "Cali", 
+                    "esCorrecta" : false, 
+                    "state" : true
+                }, 
+                {
+                    "id" : "4", 
+                    "respuesta" : "Barranquilla", 
+                    "esCorrecta" : false, 
+                    "state" : true
+                }
+            ]
+        }, 
+        {
+            "id" : "2", 
+            "pregunta" : "Capital de Venezuela?", 
+            "state" : true, 
+            "respuestas" : [
+                {
+                    "id" : "1", 
+                    "respuesta" : "Caracas", 
+                    "esCorrecta" : "false", 
+                    "state" : true
+                }, 
+                {
+                    "id" : "2", 
+                    "respuesta" : "Maracaibo", 
+                    "esCorrecta" : false, 
+                    "state" : true
+                }, 
+                {
+                    "id" : "3", 
+                    "respuesta" : "Margarita", 
+                    "esCorrecta" : false, 
+                    "state" : true
+                }
+            ]
+        }, 
+        {
+            "id" : "3", 
+            "pregunta" : "Capital de Brasil", 
+            "state" : true, 
+            "respuestas" : [
+                {
+                    "id" : "1", 
+                    "respuesta" : "Rio de Janeiro", 
+                    "esCorrecta" : false, 
+                    "state" : true
+                }, 
+                {
+                    "id" : "2", 
+                    "respuesta" : "Brasilia", 
+                    "esCorrecta" : "false", 
+                    "state" : true
+                }, 
+                {
+                    "id" : "3", 
+                    "respuesta" : "Sao Paulo", 
+                    "esCorrecta" : false, 
+                    "state" : true
+                }
+            ]
+        }
+    ]
+}
+{ 
+    "_id" : ObjectId("6298285e7fc913dd505ba207"), 
+    "idCuestionario" : "3", 
+    "nombre" : "Animales de la selva", 
+    "state" : false, 
+    "preguntas" : [
+
+    ]
+}
