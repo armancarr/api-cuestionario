@@ -10,6 +10,15 @@ export interface ICuestionarioSaveRequest {
 	state: boolean,
 	preguntas: IPreguntaCuestionario[],
 }
+export interface ICuestionarioSaveRespuestasRequest {
+	idCuestionario: string,
+	idUsuario:string,
+	respCuestionario: {
+        esCorrecta: boolean,
+        pregunta: string,
+        respuestaUser: string
+    }
+}
 
 export interface IPreguntaCuestionario {
 		id:string,

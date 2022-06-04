@@ -10,5 +10,6 @@ export const TYPES = {
     IEchoService: Symbol.for('IEchoService'),
     Repository: Symbol.for('Repository'),
     ILogger: Symbol.for('ILogger'),
-    CuestionarioService: Symbol.for('CuestionarioService')
+    CuestionarioService: Symbol.for('CuestionarioService'),
+   CuestionarioResultadoService: Symbol.for('CuestionarioResultadoService')
 }

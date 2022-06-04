@@ -26,9 +26,19 @@ const CuestionarioSaveSchemaRequest = joi.object().keys({
 const CuestionarioGetAllSchemaRequest = joi.object().keys({
 }).required()
 
+const CuestionarioSaveRespuestaSchemaRequest = joi.object().keys({
+    idUsuario: joi.string().required(),
+    idCuestionario: joi.string().required(),
+    respCuestionario: joi.array().items({
+        esCorrecta: joi.boolean().required(),
+        pregunta: joi.string().required(),
+        respuestaUser: joi.string().required(),
+    }).required()
+}).required()
 export const CuestionarioSchemaRequest = {
     CuestionarioGetSchemaRequest,
     CuestionarioSaveSchemaRequest,
-    CuestionarioGetAllSchemaRequest
+    CuestionarioGetAllSchemaRequest,
+    CuestionarioSaveRespuestaSchemaRequest
 }
 
